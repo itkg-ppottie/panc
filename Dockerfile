@@ -1,8 +1,9 @@
-FROM php:apache
+FROM php:7.2-apache
 
 RUN systemMods=" \
         apt-transport-https \
         git \
+        gnupg \
         unzip \
     " \
     && apt-get update \
